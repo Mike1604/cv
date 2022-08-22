@@ -4,7 +4,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     /*background: linear-gradient(90deg, #38997c 0%, #6eb8cc 35%, #7005b3a8 100%);*/
     background: rgb(10,105,191);
-    background: linear-gradient(0deg, rgba(10,105,191,1) 0%, #010406 100%);
+    background: linear-gradient(0deg, #0a69bf 0%, #010406 100%);
     color: white;
 }
 h1{
@@ -49,8 +49,10 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color:#1F4068;
+    color:#9365DB;
+    font-weight: bolder;
 }
+
 footer{
    
 }
@@ -71,9 +73,6 @@ div.nav-div{
 .nav-element{
     margin: auto 30px;
 }
-.skills{
-    
-}
 .skill-row{
     width: 50%;
     margin: 100px auto 100px auto;
@@ -87,9 +86,60 @@ div.nav-div{
     float: left;
     margin-right: 30px;
 }
-.python-image{
+.sql-image{
     float: right;
     margin-left: 30px;
+}
+.bar{
+    background: #ffffff;
+    display: block;
+    height: 5px;
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 15px beige;
+}
+.bar span{
+    height: 5px;
+    float: left;
+    background: #21E6C1;
+}
+.sql-skill{
+    width: 75%;
+    animation: sql-skill 2s;
+}
+.vhdl-skill{
+    width: 50%;
+    animation: vhdl-skill 2s;
+}
+.python-bar{
+    width: 75%;
+    animation: python-bar 2s;
+}
+.c-bar{
+    width: 80%;
+    animation: c-bar 2s;
+}
+.html-bar{
+    width: 60%;
+    animation: c-bar 2s;
+}
+.css-bar{
+    width: 60%;
+    animation: c-bar 2s;
+}
+.post-bar{
+    width: 70%;
+    animation: c-bar 2s;
+}
+.know-image{
+    width: 150px;
+    margin-bottom: 2rem;
+}
+.know-image:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: 0.4s;
 }
 .profile{
     margin-top: 100px;
@@ -99,7 +149,7 @@ div.nav-div{
     border-radius: 100%;
     box-shadow: 0px 0px 20px #40beaa;
     float: left;
-    margin: 30px 20px 0 25px;
+    margin: 30px 60px 0 25px;
 }
 .div-about{
     width: 95%;
@@ -125,11 +175,91 @@ div.nav-div{
 }
 .middle-container{
 }
+.div-knowledge{
+    display: flex;
+    min-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
 .bottom-container{
     background-color: black;
     padding: 50px 0 20px;
+    margin-top: 50px;
 }
+.btn{
+    font-size: large;
+    border-radius: 15px;
+    box-shadow: rgb(64 190 170) 0px 0px 20px;
+    padding: 20px;
+    margin: 150px auto;
+}
+.btn:hover{
+    background: linear-gradient(0deg, #0a69bf 0%, #010406 100%);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
 .contact-message{
     width: 40%;
     margin: 40px auto 40px;
+}
+@keyframes sql-skill{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes python-bar{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes c-bar{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes html-bar{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes css-bar{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes vhdl-skill{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes post-skill{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
 }
